@@ -3,8 +3,8 @@ import random
 toChooseFrom = "abcdefghijklmnopqrstuvwxyz "
 
 def randomStrs(x):
-    # return "".join([random.choice(toChooseFrom) for i in range(x)])
-    return random.choices(toChooseFrom, k = 28)
+    return "".join([random.choice(toChooseFrom) for i in range(x)])
+    # return random.choices(toChooseFrom, k = 28)
 
 
 s = input()

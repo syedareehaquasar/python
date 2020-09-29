@@ -1,5 +1,5 @@
 def sumPairs(arr : [int], givenSum : int) -> []:
-    s = []
+    s = set()
     pairs = []
     for element in arr:
         x = givenSum - element
@@ -7,7 +7,7 @@ def sumPairs(arr : [int], givenSum : int) -> []:
             pairs.append((element, x))
             if min(arr.count(x), arr.count(element)) > 1:
                 pairs.append((element, x))
-        s.append(element)
+        s.add(element)
     return pairs if pairs else "There are no such pairs"
 
 print(sumPairs([1, 5, 7, -1], 6)) #[(5, 1), (-1, 7)]

@@ -1,4 +1,3 @@
 # python
 pythonic codes
-hacker earth questions
-self practice questions
+self practice questions and clean codes
